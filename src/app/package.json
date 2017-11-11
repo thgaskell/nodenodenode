@@ -1,0 +1,13 @@
+{
+  "name": "node-node-node",
+  "productName": "node-today",
+  "version": "1.0.0",
+  "description": "Node Node Node...Node Today",
+  "main": "./main.prod.js",
+  "author": "Node Today",
+  "scripts": {
+    "postinstall": "npm rebuild --runtime=electron --target=1.6.6 --disturl=https://atom.io/download/atom-shell --build-from-source"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

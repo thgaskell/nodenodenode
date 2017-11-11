@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    web:
+      build:
+        context: .
+        dockerfile: Dockerfile
+        args:
+          NODE_ENV: development
+      command: ["npm", "run", "dev"]
+      environment:
+        - PORT
+        - MESSAGE
+      image: thgaskell/nodenodenode:localhost
+      ports:
+        - ${PORT}:${PORT}
+      volumes:
+        - './:/app/'
+        - "/app/node_modules"

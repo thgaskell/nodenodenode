@@ -1,0 +1,13 @@
+# Git
+.git/
+.gitignore
+
+# Misc
+.env*
+.DS_Store
+
+# Docker
+Dockerfile
+
+# Node
+node_modules/
